@@ -25,7 +25,7 @@
     "@types/node": "20.16.1",
     "eslint": "9.10.0",
     "eslint-config-next": "14.2.5",
-    "typescript": "5.6.2"
+    "typescript": "5.9.2"
   },
   "packageManager": "yarn@4.5.0"
 }
