@@ -16,7 +16,7 @@ interface Props {
 const Blog = ({ posts, authors, currentPage, numberOfPages }: Props) => {
   return (
     <section>
-      <PageHeader title="Všechny články" blogPage />
+      <PageHeader title="All articles" blogPage />
       <div className="container">
         <div className="row gy-5 gx-4 g-xl-5">
           {posts.map((post) => (

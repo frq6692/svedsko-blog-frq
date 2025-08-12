@@ -17,7 +17,7 @@ interface Props {
 const Categories = ({ categoriesWithPostsCountMap }: Props) => {
   return (
     <section>
-      <PageHeader title="Všechny kategorie" />
+      <PageHeader title="All categories" />
 
       <div className="container">
         <div className="row g-4 justify-content-center text-center">
@@ -26,7 +26,7 @@ const Categories = ({ categoriesWithPostsCountMap }: Props) => {
             .map(([cat, postsCount]) => (
               <div key={slugify(cat)} className="col-lg-4 col-md-6">
                 <Link
-                  href={`/kategorie/${slugify(cat)}`}
+                  href={`/categories/${slugify(cat)}`}
                   className={`p-4 rounded d-block is-hoverable tag-block ${
                     siteConfig.colorful && (hashString(cat) === 1 ? 'odd' : 'even')
                   }`}

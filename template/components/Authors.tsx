@@ -13,7 +13,7 @@ interface Props {
 const Authors = ({ authors }: Props) => {
   return (
     <section>
-      <PageHeader title="Tento blog píšou" blogPage={false} />
+      <PageHeader title="This blog is written by" blogPage={false} />
 
       <div className="row gx-4 gy-5 gx-md-5 justify-content-center text-center">
         {authors.map((author, index) => (

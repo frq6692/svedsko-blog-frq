@@ -63,7 +63,7 @@ const BlogPostOverview = ({
           </li>
           <li className="list-inline-item mt-2">—</li>
           <li className="list-inline-item mt-2">
-            <Link href={`/kategorie/${slugify(category)}`} className="card-meta-category">
+            <Link href={`/categories/${slugify(category)}`} className="card-meta-category">
               <i className="me-2">
                 <IconColorSwatch size={18} />
               </i>
@@ -83,7 +83,7 @@ const BlogPostOverview = ({
         <ul className="card-meta list-inline">
           <li className="list-inline-item mt-2">
             <Link
-              href={`/autori/${slugify(author)}`}
+              href={`/author/${slugify(author)}`}
               className="card-meta-author"
               title={`Přečíst všechny články od ${author}`}
             >
@@ -115,7 +115,7 @@ const BlogPostOverview = ({
               } mt-2`}
               style={{ lineHeight: 2 }}
             >
-              <Link href={`/tagy/${slugify(tag)}`}>{tag}</Link>
+              <Link href={`/tags/${slugify(tag)}`}>{tag}</Link>
             </li>
           ))}
         </ul>

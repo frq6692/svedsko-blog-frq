@@ -20,10 +20,10 @@ const NotFound = () => (
               placeholder="empty"
             />
             <p className="mb-4 mt-4">
-              Bohužel, tato stránka neexistuje. Zadali jste správnou adresu?
+              Unfortunately, this page does not exist. Did you enter the correct address?
             </p>
             <Link href="/" className="btn btn-primary mt-4">
-              Zpátky na hlavní stránku
+              Back to main page
             </Link>
           </div>
         </div>

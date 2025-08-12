@@ -38,7 +38,7 @@ const Archive = ({ posts }) => {
 
   return (
     <section>
-      <PageHeader title="Archiv článků" blogPage={false} />
+      <PageHeader title="Article archive" blogPage={false} />
       <div className="container">
         <div className="row">
           <div className="col-12">

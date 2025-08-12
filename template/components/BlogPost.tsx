@@ -48,7 +48,7 @@ const BlogPost = ({
 
               <ul className="card-meta list-inline mb-2">
                 <li className="list-inline-item mt-2">
-                  <Link href={`/autori/${slugify(author)}`} className="card-meta-author">
+                  <Link href={`/author/${slugify(author)}`} className="card-meta-author">
                     {authors.map((authorData, i) =>
                       author === authorData.name ? (
                         <span key={i}>
@@ -85,7 +85,7 @@ const BlogPost = ({
                 </li>
                 <li className="list-inline-item mt-2">—</li>
                 <li className="list-inline-item mt-2">
-                  <Link href={`/kategorie/${slugify(category)}`} className="card-meta-category">
+                  <Link href={`/categories/${slugify(category)}`} className="card-meta-category">
                     <i className="me-2">
                       <IconColorSwatch size={18} />
                     </i>
@@ -165,7 +165,7 @@ const BlogPost = ({
                     siteConfig.colorful && (hashString(tag) === 1 ? 'odd' : 'even')
                   }`}
                 >
-                  <Link href={`/tagy/${slugify(tag)}`}>{tag}</Link>
+                  <Link href={`/tags/${slugify(tag)}`}>{tag}</Link>
                 </li>
               ))}
             </ul>
@@ -196,7 +196,7 @@ const BlogPost = ({
                 </Link>
                 <div className="ms-0 ms-md-4 ps-0 ps-md-3 mt-4 mt-md-0">
                   <h3 className="h4 mb-3">
-                    <Link href={`/autori/${slugify(author)}`} className="text-dark">
+                    <Link href={`/author/${slugify(author)}`} className="text-dark">
                       {author}
                     </Link>
                   </h3>
@@ -208,13 +208,13 @@ const BlogPost = ({
                     ),
                   )}
                   <div className="content">
-                    <Link href={`/autori/${slugify(author)}`} className="text-dark">
+                    <Link href={`/author/${slugify(author)}`} className="text-dark">
                       {getAuthorByName({
                         authorName: author,
                         authors,
                       }).gender === 'male'
-                        ? 'Všechny články od tohoto autora'
-                        : 'Všechny články od této autorky'}
+                        ? 'All articles by this author'
+                        : 'All articles by this author'}
                       <i>{<IconArrowUpRight size={20} />}</i>
                     </Link>
                   </div>

@@ -14,7 +14,7 @@ const BreadcrumbItem = ({ children, href }: Props) => {
 
   return (
     <li className="d-inline ms-3">
-      {pathname.includes('/stranka') ? children : <Link href={href}>{children}</Link>}
+      {pathname.includes('/page') ? children : <Link href={href}>{children}</Link>}
     </li>
   )
 }

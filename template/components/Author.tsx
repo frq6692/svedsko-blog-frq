@@ -123,7 +123,7 @@ const Author = ({ author, posts }: Props) => {
       </section>
 
       <div className="container">
-        <PageHeader title="Moje články" />
+        <PageHeader title="My articles" />
         <div className="row gy-5 gx-4 g-xl-5">
           {posts.map(
             (post) =>

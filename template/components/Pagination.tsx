@@ -95,7 +95,7 @@ const Pagination = ({ currentPage, numberOfPages }: Props) => {
             {areArrowsVisible && (
               <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
                 <Link
-                  href={`/blog/stranka/${currentPage - 1}`}
+                  href={`/blog/page/${currentPage - 1}`}
                   className="page-link rounded"
                   aria-label="Pagination Arrow"
                   style={{ width: pageItemWidth }}
@@ -106,7 +106,7 @@ const Pagination = ({ currentPage, numberOfPages }: Props) => {
             )}
             <li className={`page-item ${currentPage === 1 ? 'active' : ''}`}>
               <Link
-                href={`/blog/stranka/1`}
+                href={`/blog/page/1`}
                 className="page-link rounded"
                 style={{ width: pageItemWidth }}
               >
@@ -125,7 +125,7 @@ const Pagination = ({ currentPage, numberOfPages }: Props) => {
                 return (
                   <li className={'page-item'}>
                     <Link
-                      href={`/blog/stranka/${pageIndex}`}
+                      href={`/blog/page/${pageIndex}`}
                       className="page-link rounded"
                       style={{ width: pageItemWidth }}
                     >
@@ -138,7 +138,7 @@ const Pagination = ({ currentPage, numberOfPages }: Props) => {
               const item = (
                 <li className={`page-item ${currentPage === pagination ? 'active' : ''}`} key={index}>
                   <Link
-                    href={`/blog/stranka/${pagination}`}
+                    href={`/blog/page/${pagination}`}
                     className="page-link rounded"
                     style={{ width: pageItemWidth }}
                   >
@@ -153,7 +153,7 @@ const Pagination = ({ currentPage, numberOfPages }: Props) => {
             {numberOfPages > 1 && (
               <li className={`page-item ${currentPage === numberOfPages ? 'active' : ''}`}>
                 <Link
-                  href={`/blog/stranka/${numberOfPages}`}
+                  href={`/blog/page/${numberOfPages}`}
                   className="page-link rounded"
                   style={{ width: pageItemWidth }}
                 >
@@ -164,7 +164,7 @@ const Pagination = ({ currentPage, numberOfPages }: Props) => {
             {areArrowsVisible && (
               <li className={`page-item ${currentPage === numberOfPages ? 'disabled' : ''}`}>
                 <Link
-                  href={`/blog/stranka/${currentPage + 1}`}
+                  href={`/blog/page/${currentPage + 1}`}
                   className="page-link rounded"
                   aria-label="Pagination Arrow"
                   style={{ width: pageItemWidth }}

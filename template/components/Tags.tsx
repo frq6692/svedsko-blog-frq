@@ -17,7 +17,7 @@ interface Props {
 const Tags = ({ tagsWithPostsCountMap }: Props) => {
   return (
     <section>
-      <PageHeader title="Všechny tagy" />
+      <PageHeader title="All tags" />
 
       <div className="container">
         <div className="row g-4 justify-content-center text-center">
@@ -26,7 +26,7 @@ const Tags = ({ tagsWithPostsCountMap }: Props) => {
             .map(([tag, postsCount]) => (
               <div key={slugify(tag)} className="col-lg-4 col-md-6">
                 <Link
-                  href={`/tagy/${slugify(tag)}`}
+                  href={`/tags/${slugify(tag)}`}
                   className={`p-4 rounded d-block is-hoverable tag-block ${
                     siteConfig.colorful && (hashString(tag) === 1 ? 'odd' : 'even')
                   }`}

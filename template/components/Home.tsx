@@ -39,7 +39,7 @@ const Home = ({ posts, authors }: Props) => {
               <i className="me-2">
                 <IconNewSection size={16} />
               </i>
-              Zobrazit všechny články
+              View all articles
             </Link>
           </div>
         </div>
